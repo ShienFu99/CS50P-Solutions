@@ -1,0 +1,3 @@
+#Gets phrase from user and replaces spaces with ...
+phrase = input("")
+print(phrase.replace(" ", "..."))
