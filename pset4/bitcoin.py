@@ -36,6 +36,9 @@ def main():
     result = o["bpi"]
     result_USD = result["USD"]
     USD_conversion = result_USD["rate_float"] * bitcoin_amount
+
+    #Future improvement: result = o["bpi"]["USD"]["rate_float"]
+
     print(f"${USD_conversion:,.4f}")
 
 
