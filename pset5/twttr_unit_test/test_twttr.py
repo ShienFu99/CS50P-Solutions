@@ -12,10 +12,12 @@ def test_shorten_blank():
 
 
 def test_shorten_lowercase():
+    assert shorten("aeiou") == ""
     assert shorten("hello, world") == "hll, wrld"
 
 
 def test_shorten_uppercase():
+    assert shorten("AEIOU") == ""
     assert shorten("HELLO, WORLD") == "HLL, WRLD"
 
 
