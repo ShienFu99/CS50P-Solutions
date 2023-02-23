@@ -23,7 +23,7 @@ def main():
     try:
         file = open(sys.argv[1])
     except FileNotFoundError:
-        sys.exit("File DNE!")
+        sys.exit("File does not exist")
 
     line_count = count_lines(file)
     print(line_count)
