@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    return len(re.findall(r"(?:\b)um(?:\b)", s, re.IGNORECASE))
+    return len(re.findall(r"\bum\b", s, re.IGNORECASE))
 
 
 if __name__ == "__main__":
